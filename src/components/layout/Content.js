@@ -9,7 +9,7 @@ export default function Content({}) {
   const nameHook = useState(inputUserData.name);
   const titleHook = useState(inputUserData.tense_title);
   const bioHook = useState(inputUserData.biography);
-  const eduHook = useState([]);
+  const eduHook = useState({});
   const expHook = useState([]);
   const skillsHook = useState([]);
 

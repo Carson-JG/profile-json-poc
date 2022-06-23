@@ -36,13 +36,10 @@ function Education(props) {
       <Row>
         <Col span={12}>
           <Select
-            mode="multiple"
-            value={edu.map(({ id }) => id)}
-            onChange={ids => {
-              const selected = sourceEducation.filter(({ id }) =>
-                ids.includes(id)
-              );
-              setEdu([...selected]);
+            value={edu.id}
+            onChange={id => {
+              const selected = sourceEducation.find(item => item.id === id);
+              setEdu({ ...selected });
             }}
             style={{ width: "100%" }}
           >
@@ -50,40 +47,25 @@ function Education(props) {
           </Select>
         </Col>
         <Col span={12}>
-          <ul>
-            {edu.map(({ id, school, degree }) => {
-              const SchoolInput = (
-                <Input
-                  addonBefore="School"
-                  value={school}
-                  onChange={e => {
-                    const { value } = e.target;
-                    const eduItem = edu.find(edu => edu.id === id);
-                    eduItem.school = value;
-                    setEdu([...edu]);
-                  }}
-                />
-              );
-              const DegreeInput = (
-                <Input
-                  addonBefore="Degree"
-                  value={degree}
-                  onChange={e => {
-                    const { value } = e.target;
-                    const eduItem = edu.find(edu => edu.id === id);
-                    eduItem.degree = value;
-                    setEdu([...edu]);
-                  }}
-                />
-              );
-              return (
-                <li key={id}>
-                  {SchoolInput}
-                  {DegreeInput}
-                </li>
-              );
-            })}
-          </ul>
+          <Input
+            addonBefore="School"
+            value={edu.school}
+            onChange={e => {
+              const { value } = e.target;
+              edu.school = value;
+              setEdu({ ...edu });
+            }}
+          />
+
+          <Input
+            addonBefore="Degree"
+            value={edu.degree}
+            onChange={e => {
+              const { value } = e.target;
+              edu.degree = value;
+              setEdu({ ...edu });
+            }}
+          />
         </Col>
       </Row>
     </div>
