@@ -1,0 +1,38 @@
+{
+  "userinfo": {
+    "name": "Jory H.",
+    "title": "Director of Career Development",
+    "funfact": "Jory connects all of the things that connect."
+  },
+  "education": {
+    "school": "The College of Saint Rose",
+    "degree": "Bachelor of Science in IT"
+  },
+  "experience": [
+    {"item": "Led an agile team of software engineers in creating a web application for wind energy, utilized by over thousands of employees worldwide"},
+    {"item": "Provided software engineering and DevOps expertise to clients on multiple projects"},
+    {"item": "Designed and developed parallel processing software in Java that leverages 2000 cores in a distributed network"},
+    {"item": "Worked with Angular 11 to develop single page applications integrated with SSO"},
+    {"item": "Design and developed backend RESTful web services in C#, secured using OAuth 2"},
+    {"item": "Proficient in developing web applications using Java/Kotlin/J2EE technologies with Spring boot, Spring MVC frameworks and integration with relational DB using Hibernate"},
+    {"item": "Design Java API to connect the Amazon S3 service to store and retrieve files"}
+  ],
+  "skills1": [
+    {"skill": "Java"},
+    {"skill": "C#"},
+    {"skill": "Kotlin"},
+    {"skill": "Angular 11"},
+    {"skill": "AWS Services"},
+    {"skill": "Node.js"},
+    {"skill": "Python"},
+    {"skill": "Typescript"},
+    {"skill": "JavaScript"},
+    {"skill": "JEE Patterns"},
+    {"skill": "Android SDK"},
+    {"skill": "JSON"},
+    {"skill": "EJB Patterns"},
+    {"skill": "Swing"},
+    {"skill": "EJB 2.0/3.0"}
+  ]
+  
+}
