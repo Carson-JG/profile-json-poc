@@ -43,25 +43,22 @@ function Skills(props) {
           </Select>
         </Col>
         <Col span={12}>
-          <ul>
-            {selectedSkills.map(({ id, skill }) => {
-              return (
-                <li key={id}>
-                  <Input
-                    value={skill}
-                    onChange={e => {
-                      const { value } = e.target;
-                      const skillItem = selectedSkills.find(
-                        skill => skill.id === id
-                      );
-                      skillItem.skill = value;
-                      setSkills([...selectedSkills]);
-                    }}
-                  />
-                </li>
-              );
-            })}
-          </ul>
+          {selectedSkills.map(({ id, skill }) => {
+            return (
+              <Input
+                value={skill}
+                addonBefore="Skill"
+                onChange={e => {
+                  const { value } = e.target;
+                  const skillItem = selectedSkills.find(
+                    skill => skill.id === id
+                  );
+                  skillItem.skill = value;
+                  setSkills([...selectedSkills]);
+                }}
+              />
+            );
+          })}
         </Col>
       </Row>
     </div>

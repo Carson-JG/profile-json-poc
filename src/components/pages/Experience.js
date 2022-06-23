@@ -88,7 +88,6 @@ function Experience(props) {
               return (
                 <li key={id}>
                   <Input.Group>
-                    {id}
                     <Input.TextArea
                       onChange={e => {
                         const { value } = e.target;

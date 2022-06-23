@@ -19,6 +19,7 @@ function UserInfo(props) {
         <Col span={12}>
           <Input
             value={nameValue}
+            addonBefore="Name"
             onChange={e => {
               setName(e.target.value);
             }}
@@ -29,6 +30,7 @@ function UserInfo(props) {
         <Col span={12}>{tense_title}</Col>
         <Col span={12}>
           <Input
+            addonBefore="Title"
             value={title}
             onChange={e => {
               setTitle(e.target.value);
@@ -41,6 +43,7 @@ function UserInfo(props) {
         <Col span={12}> {biography}</Col>
         <Col span={12}>
           <Input.TextArea
+            addonBefore="Bio"
             rows={10}
             value={bio}
             onChange={e => {
